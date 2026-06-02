@@ -622,7 +622,7 @@ function App() {
       {/* Contact Section */}
       <section ref={contactRef} className="py-20 bg-brand-gray">
         <div className="section-padding">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-1 gap-12">
             {/* Contact Info */}
             <div className="reveal-left space-y-8">
               <div>
@@ -674,52 +674,7 @@ function App() {
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="reveal-right">
-              <form className="bg-white rounded-2xl p-8 shadow-lg space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Name</label>
-                    <input
-                      type="text"
-                      placeholder="Your name"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-all"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Phone</label>
-                    <input
-                      type="tel"
-                      placeholder="Your phone"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-all"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Service Interest</label>
-                  <select className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-all">
-                    <option>Select a service</option>
-                    <option>Bespoke Dressmaking</option>
-                    <option>Bridal Services</option>
-                    <option>Aso-ebi Sourcing</option>
-                    <option>Makeup & Hair</option>
-                    <option>Event Coordination</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Message</label>
-                  <textarea
-                    rows={4}
-                    placeholder="Tell us about your project"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-all resize-none"
-                  />
-                </div>
-                <button type="submit" className="w-full btn-primary flex items-center justify-center gap-2">
-                  Send Message
-                  <ArrowRight size={18} />
-                </button>
-              </form>
-            </div>
+            {/* Contact form removed (no backend). Use contact info / links above. */}
           </div>
         </div>
       </section>
